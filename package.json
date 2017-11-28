@@ -1,0 +1,26 @@
+{
+  "name": "storybook-study",
+  "version": "1.0.0",
+  "description": "App to share public or write private stories",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcoferraz/storybook-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcoferraz/storybook-study/issues"
+  },
+  "homepage": "https://github.com/dcoferraz/storybook-study#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
