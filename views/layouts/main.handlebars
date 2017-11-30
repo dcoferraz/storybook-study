@@ -10,28 +10,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <!-- Fontawesome 4.7.0 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="/css/style.css">
   <title>StoryBooks</title>
 </head>
 
 <body>
   {{>_header}}
+  {{#if user}}
+    {{>_add-btn}}
+  {{/if}}
   <main>
     <div class="container">
       {{{body}}}
     </div>
   </main>
+  {{>_footer}}
   <!-- JQuery Import 3.2.1 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Compiled and minified Materialize JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
-  <!--<script src="../js/custom.js"></script>-->
-  <script>
-    $(document).ready(() => {
-      $('.button-collapse').sideNav();
-    });
-  </script>
+  <!-- CKEditor -->
+  <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+  <!-- Custom page JS -->
+  <script src="/js/custom.js"></script>
 </body>
 
 </html>
