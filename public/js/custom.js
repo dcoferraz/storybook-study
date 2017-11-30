@@ -3,7 +3,9 @@ $(document).ready(() => {
 
   $('select').material_select();
 
-  CKEDITOR.replace('body', {
-    plugins: 'wysiwygarea,toolbar,basicstyles,link'
-  });
+  if($('textarea[name="body"]').length > 0){
+    CKEDITOR.replace('body', {
+      plugins: 'wysiwygarea,toolbar,basicstyles,link'
+    });
+  }
 });
